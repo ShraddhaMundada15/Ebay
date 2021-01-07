@@ -29,12 +29,14 @@ public class Ebay_Base
 	public static ExtentTest log;
 	public static ExtentHtmlReporter htmlreport;
 	
-	@BeforeSuite
+//	@BeforeSuite
 	public void before_scenario()
 	{
+		System.out.println("Run Before Suite");
 		try {
 			prop = new Properties();
 			prop.load(new FileInputStream("src/test/resources/config.properties"));
+			System.out.println("Go to config");
 		}catch (Exception e) {}
 		
 		
@@ -81,7 +83,7 @@ public class Ebay_Base
 	public void after_scenario()
 	{
 		System.out.println(".................after");
-		ext.flush();			//save the report
+//		ext.flush();			//save the report
 		driver.quit();			//close if any all browsers which are open
 		try
 		{
