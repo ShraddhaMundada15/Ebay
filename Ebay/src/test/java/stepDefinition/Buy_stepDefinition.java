@@ -5,10 +5,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.Buy_SelectProduct;
+import pages.Buy_ShippingDetails;
 
 public class Buy_stepDefinition 
 {
 	Buy_SelectProduct sp = new Buy_SelectProduct();
+	Buy_ShippingDetails sd = new Buy_ShippingDetails();
 
 	@Given("^user is on ebay homepage$")
     public void user_is_on_ebay_homepage() throws Throwable
@@ -16,9 +18,10 @@ public class Buy_stepDefinition
 		sp.openurl();
     }
 
-    @When("^user clicks buy option$")
+	@When("^user clicks buy option$")
     public void user_clicks_buy_option() throws Throwable 
     {
+		sp.signin();
         sp.click_buy();
     }
 
@@ -52,18 +55,21 @@ public class Buy_stepDefinition
     }
     
     @Given("^user is on buy product page$")
-    public void user_is_on_buy_product_page() throws Throwable {
-        
+    public void user_is_on_buy_product_page() throws Throwable
+    {
+    	sd.buypage_title();
     }
 
     @When("^user clicks buy it now$")
-    public void user_clicks_buy_it_now() throws Throwable {
-        
+    public void user_clicks_buy_it_now() throws Throwable
+    {
+    	sd.click_buyitnow();
     }
 
     @Then("^display shipping details page$")
-    public void display_shipping_details_page() throws Throwable {
-        
+    public void display_shipping_details_page() throws Throwable 
+    {
+    	sd.shippingPage_title();
     }
 
     @And("^verify if user is signed in$")
@@ -72,13 +78,15 @@ public class Buy_stepDefinition
     }
 
     @When("^user can click any payment option$")
-    public void user_can_click_any_payment_option() throws Throwable {
-        
+    public void user_can_click_any_payment_option() throws Throwable 
+    {
+    	sd.click_cardpayment();
     }
 
     @Then("^user able to enter payment details$")
-    public void user_able_to_enter_payment_details() throws Throwable {
-        
+    public void user_able_to_enter_payment_details() throws Throwable 
+    {
+    	sd.paymentdetails();
     }
     
 }

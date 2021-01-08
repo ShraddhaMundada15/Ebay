@@ -29,7 +29,7 @@ public class Ebay_Base
 	public static ExtentTest log;
 	public static ExtentHtmlReporter htmlreport;
 	
-//	@BeforeSuite
+	@BeforeSuite
 	public void before_scenario()
 	{
 		System.out.println("Run Before Suite");
