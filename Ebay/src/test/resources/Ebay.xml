@@ -3,7 +3,7 @@
 	<test name="testEbay">
 		<classes>
 			<class name="base.Ebay_Base"/>
-			<class name="testSuite.Ebayreg_testrunner"/>					
+			<class name="testSuite.Ebayreg_testrunner"/>								
 		</classes>
 	</test>	
 </suite>
