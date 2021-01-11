@@ -23,7 +23,7 @@ public class Buy_SelectProduct extends Ebay_Base
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void openurl()
+	public void openurl() throws Exception
 	{
 //		driver = new ChromeDriver();
 //		driver.manage().window().maximize();
@@ -33,11 +33,30 @@ public class Buy_SelectProduct extends Ebay_Base
 		
 //		before_scenario();
 		driver.get(prop.getProperty("url"));
+		Thread.sleep(5000);
 	}
 	
-	public void signin() throws Exception 
+//	public void signin() throws Exception 
+//	{
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Sign in']")).click();
+//		try {
+//	     Thread.sleep(25000);}catch(Exception e) {}
+//	     driver.findElement(By.id("userid")).sendKeys("smundada1999@gmail.com");
+//	     driver.findElement(By.id("signin-continue-btn")).click();
+//	     try {
+//	      Thread.sleep(3000);      
+//	     }catch(Exception e) {}
+//	     driver.findElement(By.id("pass")).sendKeys("abc@123");
+//	     Thread.sleep(8000);
+//	
+//	     driver.findElement(By.id("sgnBt")).click();
+//	     Thread.sleep(3000);
+//	}
+	
+
+	public void click_buy() throws Exception
 	{
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Sign in']")).click();
 		try {
 	     Thread.sleep(25000);}catch(Exception e) {}
@@ -47,18 +66,16 @@ public class Buy_SelectProduct extends Ebay_Base
 	      Thread.sleep(3000);      
 	     }catch(Exception e) {}
 	     driver.findElement(By.id("pass")).sendKeys("abc@123");
-	     Thread.sleep(8000);
-	
+	     Thread.sleep(2000);
 	     driver.findElement(By.id("sgnBt")).click();
 	     Thread.sleep(3000);
-	}
-	
-
-	public void click_buy() throws Exception
-	{
+	     
+	     
+	     
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Thread.sleep(2000);
-		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("window.scrollBy(0,1200)");
+		Thread.sleep(3000);
 		BuyOption.click();
 		Thread.sleep(3000);
 	}
@@ -71,20 +88,23 @@ public class Buy_SelectProduct extends Ebay_Base
 		
 		System.out.println("after Click sporting goods");
 		GolfClubEuip.click();
+		Thread.sleep(3000);
 	}
 	
 	public void select_brand() throws Exception
 	{
 		GolfClubs.click();
+		Thread.sleep(3000);
 		CallawayBrand.click();
 		Thread.sleep(3000);
 	}
 	
-	public void select_product()
+	public void select_product() throws Exception
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		Thread.sleep(3000);
+		Thread.sleep(3000);
 		js.executeScript("window.scrollBy(0,1200)");
+		Thread.sleep(2000);
 		CallaywayProduct.click();
 	}
 }

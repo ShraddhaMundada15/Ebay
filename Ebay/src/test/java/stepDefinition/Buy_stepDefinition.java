@@ -21,14 +21,12 @@ public class Buy_stepDefinition
 	@When("^user clicks buy option$")
     public void user_clicks_buy_option() throws Throwable 
     {
-		sp.signin();
-        sp.click_buy();
+		sp.click_buy();
     }
 
     @Then("^should display categories page$")
     public void should_display_categories_page() throws Throwable 
     {
-    
     }
     
     @When("^user clicks sporting goods golf equipment$")
@@ -39,7 +37,6 @@ public class Buy_stepDefinition
 
     @Then("^display buy product page$")
     public void display_buy_product_page() throws Throwable {
-        
     }
 
     @And("^select category golf clubs callaway brand$")
@@ -64,17 +61,19 @@ public class Buy_stepDefinition
     public void user_clicks_buy_it_now() throws Throwable
     {
     	sd.click_buyitnow();
+    	sd.shippingpage_title();
     }
 
-    @Then("^display shipping details page$")
-    public void display_shipping_details_page() throws Throwable 
+    @Then("^display the shipping details page$")
+    public void display_the_shipping_details_page() throws Throwable 
     {
-    	sd.shippingPage_title();
+//    	sd.shippingpage_title();
     }
 
     @And("^verify if user is signed in$")
     public void verify_if_user_is_signed_in() throws Throwable {
-        
+    	
+        System.out.println("User signed in");
     }
 
     @When("^user can click any payment option$")

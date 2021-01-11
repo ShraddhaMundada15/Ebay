@@ -10,7 +10,7 @@ Feature: Buy a product
     Given user is on buy product page	
     When user clicks buy it now
     And check if user is signed in
-    Then display shipping details pages
+    Then display the shipping details page
     
    Scenario: Verify user enters details
     When user can click any payment option
