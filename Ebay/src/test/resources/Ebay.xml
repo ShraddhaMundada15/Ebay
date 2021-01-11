@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="helpSuite">
+	<test name ="testHelp">
+		<classes>
+			<class name="base.Buy_Base"/>
+			<class name="testSuite.HnC_Testrunner"/>
+		</classes>
+	</test>
+</suite>

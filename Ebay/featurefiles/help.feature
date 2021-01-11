@@ -1,9 +1,10 @@
 #Author: your.email@your.domain.com
 
+@tag
 Feature:
 	Verify Help & Contact section
 
-Scenario: verify help and contact secion is working
+Scenario: verify help and contact section is working
 Given user is on ebay homepage
 When click on help and contact link
 Then user is on help and contact page
