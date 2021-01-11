@@ -83,7 +83,7 @@ public class Ebay_Base
 	public void after_scenario()
 	{
 		System.out.println(".................after");
-//		ext.flush();			//save the report
+		ext.flush();			//save the report
 		driver.quit();			//close if any all browsers which are open
 		try
 		{
