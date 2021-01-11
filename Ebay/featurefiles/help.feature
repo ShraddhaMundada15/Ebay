@@ -14,10 +14,10 @@ When user is on help and contact page
 And click on buy as guest
 Then user redirected to buy as guest page
 
-Scenario: verify get help with an item that hasn't been arrived option is working
+Scenario: verify get help with item not arrived option is working
 When user is on help and contact page
-And click on get help with an item that has not been arrived
-Then user redirected to get help with an item that has not been arrived page
+And click on get help with item not arrived
+Then user redirected to get help with item not arrived page
 
 Scenario: verify get help with a hacked account option is working
 When user is on help and contact page

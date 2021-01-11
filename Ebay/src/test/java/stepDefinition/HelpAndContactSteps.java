@@ -41,14 +41,14 @@ public class HelpAndContactSteps
 			p.validateBaG();
 	    }
 		
-		@And("^click on get help with an item that has not been arrived$")
-	    public void click_on_get_help_with_an_item_that_has_not_been_arrived() throws Throwable
+		@Then("^user redirected to get help with item not arrived page$")
+	    public void user_redirected_to_get_help_with_item_not_arrived_page() throws Throwable
 	    {
 	       p.itemNotArrived();
 	    }
 
-	    @Then("^user redirected to get help with an item that has not been arrived page$")
-	    public void user_redirected_to_get_help_with_an_item_that_has_not_been_arrived_page() throws Throwable 
+		@And("^click on get help with item not arrived$")
+	    public void click_on_get_help_with_item_not_arrived() throws Throwable 
 	    {
 	        p.validateItemNotArrived();
 	    }
