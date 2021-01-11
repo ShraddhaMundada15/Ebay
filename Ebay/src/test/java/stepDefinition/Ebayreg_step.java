@@ -17,7 +17,7 @@ public class Ebayreg_step {
 		es.openurl();
     }
 	 @When("^user clicks on the register and enters (.+), (.+), (.+) and (.+) and click Create account$")
-	    public void user_clicks_on_the_register_and_enters_and_and_click_create_account(String firstname1, String lastname1, String email1, String password1) throws Throwable {
+	 public void user_clicks_on_the_register_and_enters_and_and_click_create_account(String firstname1, String lastname1, String email1, String password1) throws Throwable {
 	       es.registered_invalid(firstname1, lastname1, email1, password1);
 	    }
 

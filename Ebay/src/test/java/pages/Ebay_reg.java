@@ -100,10 +100,10 @@ public class Ebay_reg  extends Ebay_Base
 				System.out.println("even for invalid inputs createaccount is Enabled");
 			}
 			
-		}
+		 }
 
-		public void registered_invalid(String firstname1, String lastname1, String email1, String password1) throws Exception  //for invalid registration
-		{
+		 public void registered_invalid(String firstname1, String lastname1, String email1, String password1) throws Exception  //for invalid registration
+		  {
 			invalidregister();
 			fn.clear();
 			ln.clear();

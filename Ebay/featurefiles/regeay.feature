@@ -20,4 +20,4 @@ Feature: SignIn Action Test
 
     Examples: 
       |firstname|lastname|email|password|
-	    |shil|jerry|shiv70@gmail.com|Swa@123|
+	    |shil|jerry|shiv71@gmail.com|Swa@123|
