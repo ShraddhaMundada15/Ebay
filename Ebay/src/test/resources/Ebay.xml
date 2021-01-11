@@ -2,8 +2,9 @@
 <suite name="ebaySuite">
 	<test name="testEbay">
 		<classes>
-			<class name="base.Ebay_Base"/>
-			<class name="testSuite.validLogin_Runner"/>					
+			<class name="base.Ebay_Base"/>				
+			<class name="testSuite.Ebayreg_testrunner"/>
+			<class name="testSuite.validLogin_Runner"/>									
 		</classes>
 	</test>	
 </suite>

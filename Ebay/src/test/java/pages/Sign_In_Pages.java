@@ -43,21 +43,21 @@ public class Sign_In_Pages extends Ebay_Base
 	public void login()
 	  {
 		  signin.click();
-		  String str=driver.getTitle();
-		  if(str.contains(str)) 
-		  {
-				
-				System.out.println("User is on  sign in .");
-				log = ext.createTest("Sign In page Display");
-				log.log(Status.PASS, "User was on Signed in page.");
-				takescreenshot("SignIn_Page.png");
-			}
-			else {
-				System.out.println("User is not on Sign in Page.");
-				log = ext.createTest("Sign in page is not displayed");
-				log.log(Status.FAIL, "User was  not on Signed In page.");
-				takescreenshot("SignIn_Page.png");
-			}
+//		  String str=driver.getTitle();
+//		  if(str.contains(str)) 
+//		  {
+//				
+//				System.out.println("User is on  sign in .");
+//				log = ext.createTest("Sign In page Display");
+//				log.log(Status.PASS, "User was on Signed in page.");
+//				takescreenshot("SignIn_Page.png");
+//			}
+//			else {
+//				System.out.println("User is not on Sign in Page.");
+//				log = ext.createTest("Sign in page is not displayed");
+//				log.log(Status.FAIL, "User was  not on Signed In page.");
+//				takescreenshot("SignIn_Page.png");
+//			}
 		  try {Thread.sleep(20000);}catch(Exception e) {}
 		  email.sendKeys("simranchhaparwal3@gmail.com");
 		  logincontinue1.click();
@@ -106,23 +106,23 @@ public class Sign_In_Pages extends Ebay_Base
 		  pwd.sendKeys(pass);
 		  logincontinue2.click();	 
 		  checkloginsuccess();
-		   String str1=driver.getTitle();
+		   //String str1=driver.getTitle();
 			
-			if(str1.contains(str1)) 
-			{
-				System.out.println("User is on dashboard after sign in .");
-				log = ext.createTest("DashBoard Display");
-				log.log(Status.PASS, "User was successfully signed in");
-				takescreenshot("Dashboard.png");
-			}
-			else 
-			{
-				System.out.println("User is not on Dashboard in Page.");
-				log = ext.createTest("DashBoard Display");
-				log.log(Status.FAIL, "User was  not succesfully signed in.");
-				takescreenshot("Dashboard.png");
-			}
-		  
+//			if(str1.contains(str1)) 
+//			{
+//				System.out.println("User is on dashboard after sign in .");
+//				log = ext.createTest("DashBoard Display");
+//				log.log(Status.PASS, "User was successfully signed in");
+//				takescreenshot("Dashboard.png");
+//			}
+//			else 
+//			{
+//				System.out.println("User is not on Dashboard in Page.");
+//				log = ext.createTest("DashBoard Display");
+//				log.log(Status.FAIL, "User was  not succesfully signed in.");
+//				takescreenshot("Dashboard.png");
+//			}
+//		  
 	  }
 	  
 	}

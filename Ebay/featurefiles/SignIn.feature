@@ -1,7 +1,6 @@
 #Author: simranchhaparwal3@gmail.com
 @Ebay
 Feature: Validate Login
- 
   @validLogin
   Scenario: validate login for valid input data
     Given user is on login page
