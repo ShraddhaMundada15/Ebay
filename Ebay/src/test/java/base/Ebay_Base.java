@@ -20,6 +20,9 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
 public class Ebay_Base 
 {
 	
