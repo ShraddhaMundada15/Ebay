@@ -1,3 +1,14 @@
+/* Author :Ankita Madnaik
+ * date: 13-jan-2021
+ * Description : below code to open url
+ *               daily deal page open
+ *               daily deal page validation
+ *               search product which is available
+ *               validate product which is available
+ *               search product which is not  available
+ *               validate product which is not available
+ */
+
 package pages;
 
 import org.openqa.selenium.WebElement;
