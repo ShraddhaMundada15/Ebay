@@ -24,7 +24,7 @@ public class Ebayreg_step {
 
     @Then("^display error message$")
     public void display_error_message() throws Throwable {
-	    //  es.verify_errormessage();
+	    // es.verify_errormessage();
 	}
 
 	    

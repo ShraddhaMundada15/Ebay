@@ -82,15 +82,14 @@ public class Ebay_reg  extends Ebay_Base
 				ps.sendKeys(row.getCell(3).getStringCellValue());
 				Thread.sleep(2000);
 				checkcreate_acc_disabled();
-				
 			}
 			fin.close();
 			}
 			catch(Exception e) {}
 			
-		}
-		public void checkcreate_acc_disabled() //create account disable/enable
-		{
+		   }
+		  public void checkcreate_acc_disabled() //create account disable/enable
+		   {
 			String outerhtml=ca.getAttribute("outerHTML");
 			if(outerhtml.contains("disabled"))
 			{

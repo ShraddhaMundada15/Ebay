@@ -12,6 +12,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		,glue= {"stepDefinition"}
 		,tags= {"@register"}
 		)
-public class Ebayreg_testrunner extends AbstractTestNGCucumberTests {
+ public class Ebayreg_testrunner extends AbstractTestNGCucumberTests {
 	
 }
