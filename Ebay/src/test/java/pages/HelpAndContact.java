@@ -1,3 +1,10 @@
+/* Author: Pnakj Chuarasia
+ * Date: 11-Jan-2021
+ * Description: below code to
+ * 						open url
+ * 						open Help and Section page
+ * 						open Buying as Guest and other types of help page
+ */
 package pages;
 
 import java.util.List;
