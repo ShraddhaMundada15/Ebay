@@ -29,6 +29,7 @@ public class Ebay_Base
 	public static ExtentTest log;
 	public static ExtentHtmlReporter htmlreport;
 	
+	
 	@BeforeSuite
 	public void before_scenario()
 	{
