@@ -1,8 +1,8 @@
 <suite name="ebaySuite">
 	<test name="testEbay">
 		<classes>
-			<class name="base.Buy_Base"/>
-			<class name="testSuite.Buy_TestRunner"/>					
+			<class name="base.Ebay_Base"/>
+			<class name="testSuite.ebayreg_testrunner"/>					
 		</classes>
 	</test>	
 </suite>
