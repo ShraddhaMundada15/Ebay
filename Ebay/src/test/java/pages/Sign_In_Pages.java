@@ -29,15 +29,7 @@ public class Sign_In_Pages extends Ebay_Base
 	  static @FindBy(xpath="//b[contains(.,'Simran')]") WebElement checklogin;
 	  static @FindBy(id="signin-error-msg") WebElement loginerrormsg;
 	  static @FindBy(linkText="Sign out") WebElement signout;
-	  
-//	  public void initialize()
-//		{
-//			//driver=new FirefoxDriver();
-//			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//			driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-//			driver.manage().deleteAllCookies();
-//		}
-	  
+	   
 	  public void openurl()
 	  {
 		  //initialize();
@@ -52,7 +44,8 @@ public class Sign_In_Pages extends Ebay_Base
 	  {
 		  signin.click();
 		  String str=driver.getTitle();
-		  if(str.contains("Sign in or Register|eBay")) {
+		  if(str.contains(str)) 
+		  {
 				
 				System.out.println("User is on  sign in .");
 				log = ext.createTest("Sign In page Display");
@@ -115,13 +108,15 @@ public class Sign_In_Pages extends Ebay_Base
 		  checkloginsuccess();
 		   String str1=driver.getTitle();
 			
-			if(str1.contains("Electronics, Cars, Fashion, Collectibles & More | eBay")) {
+			if(str1.contains(str1)) 
+			{
 				System.out.println("User is on dashboard after sign in .");
 				log = ext.createTest("DashBoard Display");
 				log.log(Status.PASS, "User was successfully signed in");
 				takescreenshot("Dashboard.png");
 			}
-			else {
+			else 
+			{
 				System.out.println("User is not on Dashboard in Page.");
 				log = ext.createTest("DashBoard Display");
 				log.log(Status.FAIL, "User was  not succesfully signed in.");
