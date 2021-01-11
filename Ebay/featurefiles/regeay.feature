@@ -3,6 +3,7 @@
 
 @register
 Feature: SignIn Action Test
+
 @tag1
   Scenario Outline: verify register with invalid input
           Given user in on Ebay page
