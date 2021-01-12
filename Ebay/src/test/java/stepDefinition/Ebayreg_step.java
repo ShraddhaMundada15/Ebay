@@ -6,8 +6,8 @@ import cucumber.api.java.en.When;
 import pages.Ebay_reg;
 import pages.Sign_In_Pages;
 
-public class Ebayreg_step {
-
+public class Ebayreg_step 
+{
     Ebay_reg es =new Ebay_reg();
 //    Sign_In_Pages signin = new Sign_In_Pages();
     

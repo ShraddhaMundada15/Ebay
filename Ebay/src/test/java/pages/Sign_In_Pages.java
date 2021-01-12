@@ -8,6 +8,7 @@ import base.Ebay_Base;
 
 public class Sign_In_Pages extends Ebay_Base 
 {
+	
 	  static @FindBy(linkText="Sign in") WebElement signin;
 //	  static @FindBy(xpath="//a[@id='signin-link']") WebElement signin1;
 	  static @FindBy(name="userid") WebElement email;

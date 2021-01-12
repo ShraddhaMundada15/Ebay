@@ -22,6 +22,7 @@ import base.Ebay_Base;
 
 public class HelpAndContact extends Ebay_Base
 {
+	
 	static @FindBy(xpath="//a[text()=' Help & Contact']") WebElement w;
 	static @FindBy(xpath="//span[text()='Buying as a guest ']") WebElement g;
 	static @FindBy(xpath="//span[text()='Get help with an item that hasn't arrived']") WebElement n;

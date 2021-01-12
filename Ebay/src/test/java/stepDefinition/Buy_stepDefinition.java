@@ -9,6 +9,7 @@ import pages.Buy_ShippingDetails;
 
 public class Buy_stepDefinition 
 {
+	
 	Buy_SelectProduct sp = new Buy_SelectProduct();
 	Buy_ShippingDetails sd = new Buy_ShippingDetails();
 

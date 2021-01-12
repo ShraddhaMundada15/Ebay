@@ -12,6 +12,8 @@ import cucumber.api.junit.Cucumber;
 		,glue= {"stepDefinition","base"}
 		,tags= "@sanityTest"
 		)
+
+
  public class Sell_TestRunner extends AbstractTestNGCucumberTests {
 
 }

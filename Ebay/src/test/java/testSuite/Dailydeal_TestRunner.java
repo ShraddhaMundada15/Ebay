@@ -13,6 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		,tags= "@tag"
 		)
 
+
 public class Dailydeal_TestRunner extends AbstractTestNGCucumberTests {
 
 }

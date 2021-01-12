@@ -26,6 +26,7 @@ import base.Ebay_Base;
 
 public class Ebay_reg  extends Ebay_Base
 { 
+	
 	 static @FindBy(xpath="//a[text()='register']") WebElement reg1; //pagefactory elements for register
 	 static @FindBy(xpath="//input[@name='firstname']") WebElement fn; //firstname
 	 static @FindBy(xpath="//input[@name='lastname']") WebElement ln;  //lastname

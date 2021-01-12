@@ -11,7 +11,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 tags = "@Ebay"
 )
 
-	
 public class validLogin_Runner extends AbstractTestNGCucumberTests {
 
 }

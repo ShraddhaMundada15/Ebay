@@ -10,7 +10,6 @@ public class HelpAndContactSteps
 {
 		
 		HelpAndContact p = new HelpAndContact();
-		
 		@Given("^user is on ebay homepage$")
 	    public void user_is_on_ebay_homepage() throws Throwable 
 		{

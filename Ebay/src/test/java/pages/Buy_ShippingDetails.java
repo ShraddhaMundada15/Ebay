@@ -10,6 +10,7 @@ import base.Ebay_Base;
 
 public class Buy_ShippingDetails extends Ebay_Base
 {
+	
 	static @FindBy(xpath="//a[@id='binBtn_btn']") WebElement Buyitnow;
 	static @FindBy(xpath="//span//input[@title='Add a credit or debit card']") WebElement CreditDebitCard;
 	static @FindBy(xpath="//div//input[@id='cardNumber']") WebElement CardNumber;

@@ -22,8 +22,8 @@ import com.aventstack.extentreports.Status;
 
 import base.Ebay_Base;
 
-public class Sell_SelectCategory extends Ebay_Base {
-	
+public class Sell_SelectCategory extends Ebay_Base
+{	
 		static @FindBy(linkText="Sign in") WebElement signin;					//pagefactory elements for clicking on sell and selecting categories......
 		static @FindBy(id="userid") WebElement userid;
 		static @FindBy(id="signin-continue-btn") WebElement continuebutton;

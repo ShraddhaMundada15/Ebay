@@ -1,7 +1,6 @@
 #Author: your.email@your.domain.com
 
 
-
 @ebay_buyproduct1
 Feature: Select a product to buy
 

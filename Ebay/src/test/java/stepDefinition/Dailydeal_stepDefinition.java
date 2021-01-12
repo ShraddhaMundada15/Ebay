@@ -8,6 +8,7 @@ import pages.Dailydealpage;
 
 public class Dailydeal_stepDefinition
 {
+	
      Dailydealpage ddp=new Dailydealpage();
      
 	 @Given("^user is on eBay dashboard$")

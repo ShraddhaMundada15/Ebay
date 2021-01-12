@@ -21,6 +21,7 @@ import base.Ebay_Base;
 
 public class Dailydealpage extends Ebay_Base
 {
+	
 	static @FindBy(linkText="Daily Deals") WebElement DailyDealoption;
 	static @FindBy(name="_nkw") WebElement Searchproduct;
 	static @FindBy(xpath=("//input[@value='Search']")) WebElement Searchbutton;

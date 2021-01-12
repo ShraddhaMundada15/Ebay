@@ -7,8 +7,8 @@ import cucumber.api.java.en.When;
 import pages.Sell_ItemListing;
 import pages.Sell_SelectCategory;
 
-public class Sell_StepDefinition{
-	
+public class Sell_StepDefinition
+{	
 	Sell_ItemListing l= new Sell_ItemListing();
 	Sell_SelectCategory c= new Sell_SelectCategory(); 
 	

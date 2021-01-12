@@ -9,7 +9,6 @@ import pages.Sign_In_Pages;
 public class Sign_In_Step 
 {
 	Sign_In_Pages login=new Sign_In_Pages(); 
-	  
 	@When("^enter valid (.+) and invalid (.+) and login$")
     public void enter_valid_and_invalid_and_login(String username, String password) throws Throwable
     {

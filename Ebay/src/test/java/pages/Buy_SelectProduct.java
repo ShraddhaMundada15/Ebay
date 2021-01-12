@@ -10,6 +10,7 @@ import base.Ebay_Base;
 
 public class Buy_SelectProduct extends Ebay_Base
 {
+	
 	static @FindBy(xpath="//a[text()='Buy']") WebElement BuyOption;
 	static @FindBy(xpath="//a[@href='#sporting-goods']") WebElement SportingGoods;
 	static @FindBy(xpath="//a[text()='Golf Clubs & Equipment']") WebElement GolfClubEuip;
