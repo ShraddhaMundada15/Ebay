@@ -7,6 +7,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.Ebay_reg;
 
+
 public class Ebayreg_step {
 
     Ebay_reg es =new Ebay_reg();

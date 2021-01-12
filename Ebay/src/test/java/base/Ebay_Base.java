@@ -20,9 +20,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-
 public class Ebay_Base 
 {
 	
@@ -31,6 +28,7 @@ public class Ebay_Base
 	public static ExtentReports ext;
 	public static ExtentTest log;
 	public static ExtentHtmlReporter htmlreport;
+	
 	
 	@BeforeSuite
 	public void before_scenario()
@@ -66,6 +64,7 @@ public class Ebay_Base
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
 	}
 	
 	

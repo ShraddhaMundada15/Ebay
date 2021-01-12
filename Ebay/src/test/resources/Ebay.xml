@@ -1,9 +1,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="ebaySuite">
 	<test name="testEbay">
+<<<<<<< HEAD
 		<classes>
 			<class name="base.Ebay_Base"/>
 			<class name="testSuite.HnC_Testrunner"/>								
+=======
+		<classes>
+			<class name="base.Ebay_Base"/>				
+			<class name="testSuite.Ebayreg_testrunner"/>
+			<class name="testSuite.validLogin_Runner"/>									
+			<class name="testSuite.Dailydeal_TestRunner"/>					
+
+>>>>>>> branch 'master' of https://github.com/ShraddhaMundada15/Ebay
 		</classes>
+<<<<<<< HEAD
 	</test>	
 </suite>
+=======
+	</test>	
+</suite>
+>>>>>>> branch 'master' of https://github.com/ShraddhaMundada15/Ebay
