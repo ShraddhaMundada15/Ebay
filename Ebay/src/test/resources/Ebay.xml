@@ -1,8 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="ebaySuite">
 	<test name="testEbay">
+						
 		<classes>
-			<class name="base.Ebay_Base"/>
+			<class name="base.Ebay_Base"/>				
+			<class name="testSuite.Ebayreg_testrunner"/>
+			<class name="testSuite.validLogin_Runner"/>	
 			<class name="testSuite.Sell_TestRunner"/>					
+			<class name="testSuite.HnC_Testrunner"/>								
+			<class name="testSuite.Dailydeal_TestRunner"/>	
 		</classes>
+
 	</test>	
 </suite>
+
+	
+

@@ -5,7 +5,7 @@ Feature: Sell Product Option
   
   
   Scenario: Verify to display categories page
-    Given user is on ebay homepage
+    Given user is on the homepage
 		When user clicks sell option
 		Then display browse category page
     

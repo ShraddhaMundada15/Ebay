@@ -19,7 +19,7 @@ import com.aventstack.extentreports.Status;
 
 import base.Ebay_Base;
 
-public class Sell_ItemListing extends Ebay_Base{
+ public class Sell_ItemListing extends Ebay_Base{
 	
 	static @FindBy(id="editpane_title") WebElement name;						 //pagefactory elements for entering listing details....
 	static @FindBy(xpath="//span[@id='inpWrapper']") WebElement upload;

@@ -38,6 +38,7 @@ public class Sell_SelectCategory extends Ebay_Base {
 		{
 			PageFactory.initElements(driver,this);
 		}
+		/*
 		public void openurl()																	//code to openurl....
 		{
 			
@@ -59,7 +60,7 @@ public class Sell_SelectCategory extends Ebay_Base {
 	        }catch(Exception e) {}
 	        password.sendKeys("*Pooja8483");
 	        signinbutton.click();
-		}
+		}*/
 		public void sellProduct() {																//code to click on sell button...
 			try {
 		    Thread.sleep(30000);}catch(Exception e) {}

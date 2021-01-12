@@ -11,14 +11,12 @@ public class Sell_StepDefinition{
 	
 	Sell_ItemListing l= new Sell_ItemListing();
 	Sell_SelectCategory c= new Sell_SelectCategory(); 
-
-		@Given("^user is on ebay homepage$")										
-	    public void user_is_on_ebay_homepage() throws Throwable
-	    {
-		 	c.openurl();
-		 	c.login();
-	    }
-
+	
+		@Given("^user is on the homepage$")
+		public void user_is_on_the_homepage() throws Throwable
+		{
+       
+		}
 	    @When("^user clicks sell option$")
 	    public void user_clicks_sell_option() throws Throwable 
 	    {
