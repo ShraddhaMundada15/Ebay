@@ -7,7 +7,7 @@ Feature: Select a product to buy
 
 
   Scenario: Verify to display categories page
-    Given user is on ebay homepage
+    Given user is on homepage
     When user clicks buy option
     Then should display categories page
     

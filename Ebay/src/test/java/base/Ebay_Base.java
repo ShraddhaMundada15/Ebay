@@ -22,7 +22,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Ebay_Base 
 {
-	
 	public static WebDriver driver;
 	public static Properties prop;
 	public static ExtentReports ext;

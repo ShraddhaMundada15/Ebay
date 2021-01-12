@@ -16,6 +16,6 @@ Feature: Buy a product
     When user can click any payment option
     Then user able to enter payment details
     
-    
+   
 
 

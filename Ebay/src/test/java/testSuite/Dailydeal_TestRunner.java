@@ -17,12 +17,3 @@ public class Dailydeal_TestRunner extends AbstractTestNGCucumberTests {
 
 }
 
-
-
-
-
-/*public class Dailydeal_TestRunner
-{
-
-}
-*/

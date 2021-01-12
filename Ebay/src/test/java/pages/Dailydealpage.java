@@ -26,15 +26,18 @@ public class Dailydealpage extends Ebay_Base
 	static @FindBy(xpath=("//input[@value='Search']")) WebElement Searchbutton;
 	static @FindBy(xpath=("//div[@class='page-notice__content']/p")) WebElement message;
 	
+	static @FindBy(xpath="//*[@id='gh-ug']") WebElement hi; //hi (user) button
+	static @FindBy(xpath="/html/body/header/div[1]/ul[1]/li[1]/div/ul/li[5]/a") WebElement out; //signout button
+	
 	public Dailydealpage()
 	{
 	   PageFactory.initElements(driver, this);	
 	}
 	
-	public void openurl()
-	{
-		driver.get(prop.getProperty("url"));
-	}
+//	public void openurl()
+//	{
+//		driver.get(prop.getProperty("url"));
+//	}
 	
 	public void dailydeal_Pageoption()
 	{
@@ -106,6 +109,15 @@ public class Dailydealpage extends Ebay_Base
 			log.log(Status.FAIL, "Deal and discount for given product is display for product which is not available");
 			takescreenshot("Dealproductnotavailable.png");
 		}
+		driver.navigate().to("https://www.ebay.com/");
+		Thread.sleep(3000);
+		Thread.sleep(2000);
+		hi.click(); //click hi(user)
+		Thread.sleep(2000);
+		out.click(); //click signout
+		Thread.sleep(2000);
+		driver.navigate().to("https://www.ebay.com/");
+		Thread.sleep(2000);
 	}
 	
 	

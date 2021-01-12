@@ -18,6 +18,7 @@ public class Buy_ShippingDetails extends Ebay_Base
 	static @FindBy(xpath="//div//input[@id='cardHolderFirstName']") WebElement CardFirstName;
 	static @FindBy(xpath="//div//input[@id='cardHolderLastName']") WebElement CarsLastName;
 	
+	
 	public Buy_ShippingDetails()
 	{
 		PageFactory.initElements(driver, this);

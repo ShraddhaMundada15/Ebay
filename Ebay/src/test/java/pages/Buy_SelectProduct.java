@@ -1,6 +1,5 @@
 package pages;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -25,56 +24,16 @@ public class Buy_SelectProduct extends Ebay_Base
 	
 	public void openurl() throws Exception
 	{
-//		driver = new ChromeDriver();
-//		driver.manage().window().maximize();
-//		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-//		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-//		driver.get("https://www.ebay.com");
-		
-//		before_scenario();
-		driver.get(prop.getProperty("url"));
+//		driver.get(prop.getProperty("url"));
 		Thread.sleep(5000);
 	}
 	
-//	public void signin() throws Exception 
-//	{
-//		Thread.sleep(2000);
-//		driver.findElement(By.xpath("//a[text()='Sign in']")).click();
-//		try {
-//	     Thread.sleep(25000);}catch(Exception e) {}
-//	     driver.findElement(By.id("userid")).sendKeys("smundada1999@gmail.com");
-//	     driver.findElement(By.id("signin-continue-btn")).click();
-//	     try {
-//	      Thread.sleep(3000);      
-//	     }catch(Exception e) {}
-//	     driver.findElement(By.id("pass")).sendKeys("abc@123");
-//	     Thread.sleep(8000);
-//	
-//	     driver.findElement(By.id("sgnBt")).click();
-//	     Thread.sleep(3000);
-//	}
-	
-
 	public void click_buy() throws Exception
-	{
-		driver.findElement(By.xpath("//a[text()='Sign in']")).click();
-		try {
-	     Thread.sleep(25000);}catch(Exception e) {}
-	     driver.findElement(By.id("userid")).sendKeys("smundada1999@gmail.com");
-	     driver.findElement(By.id("signin-continue-btn")).click();
-	     try {
-	      Thread.sleep(3000);      
-	     }catch(Exception e) {}
-	     driver.findElement(By.id("pass")).sendKeys("abc@123");
-	     Thread.sleep(2000);
-	     driver.findElement(By.id("sgnBt")).click();
-	     Thread.sleep(3000);
-	     
-	     
-	     
+	{    
+//		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Thread.sleep(2000);
-		js.executeScript("window.scrollBy(0,1200)");
+		js.executeScript("window.scrollBy(0,800)");
 		Thread.sleep(3000);
 		BuyOption.click();
 		Thread.sleep(3000);

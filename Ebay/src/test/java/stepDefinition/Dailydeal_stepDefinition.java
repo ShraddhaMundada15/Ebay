@@ -13,7 +13,7 @@ public class Dailydeal_stepDefinition
 	 @Given("^user is on eBay dashboard$")
 	    public void user_is_on_ebay_dashboard() throws Throwable
 	   {
-	      ddp.openurl();  
+//	      ddp.openurl();  
 	    }
 
 	    @When("^click on Daily Deal option$")

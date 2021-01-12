@@ -12,8 +12,8 @@ public class Buy_stepDefinition
 	Buy_SelectProduct sp = new Buy_SelectProduct();
 	Buy_ShippingDetails sd = new Buy_ShippingDetails();
 
-	@Given("^user is on ebay homepage$")
-    public void user_is_on_ebay_homepage() throws Throwable
+	 @Given("^user is on homepage$")
+	    public void user_is_on_homepage() throws Throwable
 	{
 //		sp.openurl();
     }
