@@ -29,7 +29,6 @@ public class Ebay_Base
 	public static ExtentTest log;
 	public static ExtentHtmlReporter htmlreport;
 	
-	
 	@BeforeSuite
 	public void before_scenario()
 	{
@@ -90,6 +89,5 @@ public class Ebay_Base
 		Runtime.getRuntime().exec("taskkill /f /im chromedriver.exe");//kill the geckodriver process
 		}catch(Exception e) {}
 	}
-
 
 }

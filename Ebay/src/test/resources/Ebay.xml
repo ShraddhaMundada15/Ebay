@@ -2,11 +2,11 @@
 <suite name="ebaySuite">
 	<test name="testEbay">
 		<classes>
-			<class name="base.Ebay_Base"/>				
-			<class name="testSuite.Ebayreg_testrunner"/>
-			<class name="testSuite.validLogin_Runner"/>									
-			<class name="testSuite.Dailydeal_TestRunner"/>					
-
+			<class name="base.Ebay_Base"/>		
+			<class name="testSuite.Ebayreg_testrunner"/>		
+			<class name="testSuite.validLogin_Runner"/>
+			<class name="testSuite.Buy_TestRunner"/>
+			<class name="testSuite.Dailydeal_TestRunner"/>
 		</classes>
 	</test>	
 </suite>
