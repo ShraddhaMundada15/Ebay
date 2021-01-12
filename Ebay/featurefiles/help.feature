@@ -1,6 +1,7 @@
 #Author: your.email@your.domain.com
 
 
+>>>>>>> branch 'master' of https://github.com/ShraddhaMundada15/Ebay.git
 @tag
 Feature:
 	Verify Help & Contact section

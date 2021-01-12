@@ -173,4 +173,3 @@ public class Ebay_reg  extends Ebay_Base
 		}
 	
 }
-

@@ -90,5 +90,4 @@ public class Buy_ShippingDetails extends Ebay_Base
 		driver.navigate().to("https://www.ebay.com/");
 		Thread.sleep(3000);
 	}
-
 }
