@@ -30,16 +30,7 @@ public class Sign_In_Pages extends Ebay_Base
 	  public void login()
 	  {
 		  signin.click();
-
-		  try {Thread.sleep(25000);}catch(Exception e) {}
-		  email.sendKeys("smundada1999@gmail.com");
-		  logincontinue1.click();
-		  try {Thread.sleep(5000);}catch(Exception e) {}
-		  pwd.sendKeys("abc@123");
-		  logincontinue2.click();	  
-		  try {Thread.sleep(30000);}catch(Exception e) {}
-		  
-		  String str=driver.getTitle();
+		   String str=driver.getTitle();
 		  if(str.contains("Sign in or Register | eBay")) 
 		  {
 				System.out.println("User is on sign in page");
@@ -52,6 +43,16 @@ public class Sign_In_Pages extends Ebay_Base
 				log.log(Status.FAIL, "User was not on Signed In page.");
 				takescreenshot("SignIn_Page.png");
 			}
+
+		  try {Thread.sleep(25000);}catch(Exception e) {}
+		  email.sendKeys("smundada1999@gmail.com");
+		  logincontinue1.click();
+		  try {Thread.sleep(5000);}catch(Exception e) {}
+		  pwd.sendKeys("abc@123");
+		  logincontinue2.click();	  
+		  try {Thread.sleep(30000);}catch(Exception e) {}
+		  
+		 
 		  //driver.execute_script("var items = {}; for (index = 0; index < arguments[0].attributes.length; ++index) { items[arguments[0].attributes[index].name] = arguments[0].attributes[index].value }; return items;", element)  
 	  }
 	  public void checkloginsuccess()
@@ -70,7 +71,7 @@ public class Sign_In_Pages extends Ebay_Base
 			  {
 				  System.out.println("For invalid Login error message is as expected");
 //				  Thread.sleep(2000);
-				  driver.navigate().to("https://www.ebay.com/");
+				  
 			  }
 			  else
 			  {
@@ -93,7 +94,8 @@ public class Sign_In_Pages extends Ebay_Base
 		  email.sendKeys(uid);
 		  logincontinue1.click();
 		  pwd.sendKeys(pass);
-		  logincontinue2.click();	 
-		  checkloginsuccess();  
+		  logincontinue2.click();
+		  driver.navigate().to("https://www.ebay.com/");
 	  }
+		  
   }
